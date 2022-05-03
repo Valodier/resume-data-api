@@ -14,7 +14,7 @@ class EducationsController < ApplicationController
 
   def create
     education = Education.create!(
-      student_id = current_user.id,
+      student_id: current_user.id,
       start_date: params[:start_date],
       end_date: params[:end_date],
       degree: params[:degree],
