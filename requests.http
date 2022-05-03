@@ -26,8 +26,9 @@ Content-Type: application/json
 ### STUDENTS UPDATE ###
 PATCH http://localhost:3000/students/1.json
 Content-Type: application/json
-{
 
+{
+  "first_name": "A name"
 }
 ### STUDENTS DESTROY ###
 DELETE http://localhost:3000/students/1.json
@@ -46,18 +47,21 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": ,
-  "description": ,
-  "url": ,
-  "screenshot": ,
+  "name": "",
+  "description": "",
+  "url": "",
+  "screenshot": "",
 }
+
 ### CAPSTONE UPDATE ###
 PATCH http://localhost:3000/capstones/1.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### CAPSTONE DESTROY ###
 DELETE http://localhost:3000/capstones/1
 Authorization: Bearer {{jwt}}
@@ -76,19 +80,21 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "start_date": ,
-  "end_date": ,
-  "degree": ,
-  "university_name": ,
-  "details":
+  "start_date": "",
+  "end_date": "",
+  "degree": "",
+  "university_name": "",
+  "details": ""
 }
 ### EDUCATION UPDATE ###
 PATCH http://localhost:3000/education/1.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### EDUCATION DESTROY ###
 DELETE http://localhost:3000/education/1.json
 Authorization: Bearer {{jwt}}
@@ -117,9 +123,11 @@ Content-Type: application/json
 PATCH http://localhost:3000/experience/1.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### EXPERIENCE DESTROY ###
 DELETE http://localhost:3000/experience/1.json
 Authorization: Bearer {{jwt}}
@@ -144,9 +152,11 @@ Content-Type: application/json
 PATCH http://localhost:3000/skills/1.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### SKILLS DESTROY ###
 DELETE http://localhost:3000/skills/1.json
 Authorization: Bearer {{jwt}}
