@@ -15,18 +15,18 @@ Rails.application.routes.draw do
   delete "/capstones/:id" => "capstones#destroy"
 
   ###EDUCATION###
-  get  "/education" => "education#index"
-  post "/education" => "education#create"
-  get  "/education/:id" => "education#show"
-  patch "/education/:id" => "education#update"
-  delete "/education/:id" => "education#destroy"
+  get  "/educations" => "education#index"
+  post "/educations" => "education#create"
+  get  "/educations/:id" => "education#show"
+  patch "/educations/:id" => "education#update"
+  delete "/educations/:id" => "education#destroy"
 
   ###EXPERIENCE###
-  get  "/experience" => "experiences#index"
-  post "/experience" => "experiences#create"
-  get  "/experience/:id" => "experiences#show"
-  patch "/experience/:id" => "experiences#update"
-  delete "/experience/:id" => "experiences#destroy"
+  get  "/experiences" => "experiences#index"
+  post "/experiences" => "experiences#create"
+  get  "/experiences/:id" => "experiences#show"
+  patch "/experiences/:id" => "experiences#update"
+  delete "/experiences/:id" => "experiences#destroy"
 
   ###SKILLS###
   get  "/skills" => "skills#index"
