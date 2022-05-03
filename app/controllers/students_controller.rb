@@ -53,7 +53,9 @@ class StudentsController < ApplicationController
     end
   end
   def destroy
-    
+    student = Student.find_by(id: params[:id])
+    student.destroy
+    render json: {message: "Student eliminated."}
   end
 
 end
