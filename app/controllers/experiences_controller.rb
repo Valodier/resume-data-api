@@ -15,7 +15,7 @@ class ExperienceController < ApplicationController
 
   def create
     experience = Experience.create!(
-      user_id: current_user.id,
+      student_id: current_user.id,
       start_date: params[:start_date],
       end_date: params[:end_date],
       job_title: params[:job_title],
