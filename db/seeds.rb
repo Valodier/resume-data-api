@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+# users = User.create!(name: "Joe Smith", email: "joesmith@test.com", password_digest: "password")
+
+# users = User.create!(name: "Jane Smith", email: "janesmith@test.com", password_digest: "password")
+
 # skills = Skill.create(skill_name: "Ruby on Rails")
 # skills = Skill.create(skill_name: "Excel")
 # skills = Skill.create(skill_name: "Breathing")
@@ -34,3 +38,5 @@
 # educations = Education.create(start_date: "01-01-2009", end_date: "01-01-2010", degree: "Masters in Accounting", university_name: "Accounting University", details: "How to account even more")
 
 # educations = Education.create(start_date: "01-01-2015", end_date: "01-01-2017", degree: "Computers", university_name: "Computer University", details: "How to do computers")
+
+# capstones = Capstone.create(name: "The Best App", description: "The best app ever created", url: "www.best.com", screenshot: "wwww.image1.com")
