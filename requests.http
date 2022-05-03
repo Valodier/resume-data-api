@@ -96,16 +96,16 @@ Content-Type: application/json
 }
 
 ### EDUCATION DESTROY ###
-DELETE http://localhost:3000/education/1.json
+DELETE http://localhost:3000/educations/1.json
 Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
 
 ### EXPERIENCE INDEX ###
-GET http://localhost:3000/experiences.json
+GET http://localhost:3000/experience.json
 
 ### EXPERIENCE SHOW ###
-GET http://localhost:3000/experiences.json
+GET http://localhost:3000/experience.json
 
 ### EXPERIENCE CREATE
 POST http://localhost:3000/experiences.json

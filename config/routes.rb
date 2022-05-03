@@ -22,11 +22,11 @@ Rails.application.routes.draw do
   delete "/educations/:id" => "educations#destroy"
 
   ###EXPERIENCE###
-  get  "/experiences" => "experiences#index"
-  post "/experiences" => "experiences#create"
-  get  "/experiences/:id" => "experiences#show"
-  patch "/experiences/:id" => "experiences#update"
-  delete "/experiences/:id" => "experiences#destroy"
+  get  "/experience" => "experience#index"
+  post "/experience" => "experience#create"
+  get  "/experience/:id" => "experience#show"
+  patch "/experience/:id" => "experience#update"
+  delete "/experience/:id" => "experience#destroy"
 
   ###SKILLS###
   get  "/skills" => "skills#index"
