@@ -1,4 +1,6 @@
 class ExperienceController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
+
   def index
     experiences = Experience.all
 
@@ -13,6 +15,7 @@ class ExperienceController < ApplicationController
 
   def create
     experience = Experience.create!(
+      student_id: current_user.id,
       start_date: params[:start_date],
       end_date: params[:end_date],
       job_title: params[:job_title],
