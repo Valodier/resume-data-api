@@ -69,13 +69,13 @@ Authorization: Bearer {{jwt}}
 # ----------------------------------------------------------- #
 
 ### EDUCATION INDEX ###
-GET http://localhost:3000/education.json
+GET http://localhost:3000/educations.json
 
 ### EDUCATION SHOW ###
-GET http://localhost:3000/education.json
+GET http://localhost:3000/educations.json
 
 ### EDUCATION CREATE
-POST http://localhost:3000/education.json
+POST http://localhost:3000/educations.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
