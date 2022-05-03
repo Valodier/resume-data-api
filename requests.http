@@ -1,0 +1,123 @@
+### STUDENTS INDEX ###
+GET http://localhost:3000/students.json
+
+### STUDETS SHOW ###
+GET http://localhost:3000/students.json
+
+### STUDENTS CREATE
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+
+}
+### STUDENTS UPDATE ###
+PATCH http://localhost:3000/students/1
+Content-Type: application/json
+{
+
+}
+### STUDENTS DESTROY ###
+DELETE http://localhost:3000/students/1
+
+# ----------------------------------------------------------- #
+
+### CAPSTONE INDEX ###
+GET http://localhost:3000/capstones.json
+
+### CAPSTONE SHOW ###
+GET http://localhost:3000/capstones.json
+
+### CAPSTONE CREATE
+POST http://localhost:3000/capstones
+Content-Type: application/json
+
+{
+
+}
+### CAPSTONE UPDATE ###
+PATCH http://localhost:3000/capstones/1
+Content-Type: application/json
+{
+
+}
+### CAPSTONE DESTROY ###
+DELETE http://localhost:3000/capstones/1
+
+# ----------------------------------------------------------- #
+
+### EDUCATION INDEX ###
+GET http://localhost:3000/education.json
+
+### EDUCATION SHOW ###
+GET http://localhost:3000/education.json
+
+### EDUCATION CREATE
+POST http://localhost:3000/education
+Content-Type: application/json
+
+{
+
+}
+### EDUCATION UPDATE ###
+PATCH http://localhost:3000/education/1
+Content-Type: application/json
+{
+
+}
+### EDUCATION DESTROY ###
+DELETE http://localhost:3000/education/1
+
+# ----------------------------------------------------------- #
+
+### EXPERIENCE INDEX ###
+GET http://localhost:3000/experience.json
+
+### EXPERIENCE SHOW ###
+GET http://localhost:3000/experience.json
+
+### EXPERIENCE CREATE
+POST http://localhost:3000/experience
+Content-Type: application/json
+
+{
+
+}
+### EXPERIENCE UPDATE ###
+PATCH http://localhost:3000/experience/1
+Content-Type: application/json
+{
+
+}
+### EXPERIENCE DESTROY ###
+DELETE http://localhost:3000/experience/1
+
+# ----------------------------------------------------------- #
+
+### SKILLS INDEX ###
+GET http://localhost:3000/skills.json
+
+### SKILLS SHOW ###
+GET http://localhost:3000/skills.json
+
+### SKILLS CREATE
+POST http://localhost:3000/skills
+Content-Type: application/json
+
+{
+
+}
+### SKILLS UPDATE ###
+PATCH http://localhost:3000/skills/1
+Content-Type: application/json
+{
+
+}
+### SKILLS DESTROY ###
+DELETE http://localhost:3000/skills/1
+
+
+
+
+
+
