@@ -20,8 +20,8 @@ class StudentsController < ApplicationController
       phone_number: params[:phone_number]
     )
 
-    if student.save
-      render json: student
+    if students.save
+      render json: students
     else
       render json: {errors: student.errors.full_messages}, status: 422
     end

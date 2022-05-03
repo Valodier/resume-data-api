@@ -1,3 +1,5 @@
+@jwt="eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTQ5Nzl9.OZMNnu4HpJHU6IQyvjrzI3CMDDgX9zpmZ3u9kRoXPhc"
+
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
 
@@ -9,23 +11,24 @@ POST http://localhost:3000/students.json
 Content-Type: application/json
 
 {
-  "first_name": ,
-  "last_name": ,
-  "email": ,
-  "phone_number": ,
-  "short_bio": ,
-  "linkedin_url": ,
-  "twitter_handle": ,
-  "website_url": ,
-  "online_resume_url": ,
-  "github_url": ,
-  "phone_number": 
+  "first_name": "",
+  "last_name": "",
+  "email": "",
+  "phone_number": "",
+  "short_bio": "",
+  "linkedin_url": "",
+  "twitter_handle": "",
+  "website_url": "",
+  "online_resume_url": "",
+  "github_url": "",
+  "phone_number": "" 
 }
 ### STUDENTS UPDATE ###
 PATCH http://localhost:3000/students/1.json
 Content-Type: application/json
-{
 
+{
+  "first_name": "A name"
 }
 ### STUDENTS DESTROY ###
 DELETE http://localhost:3000/students/1.json
@@ -40,22 +43,28 @@ GET http://localhost:3000/capstones.json
 
 ### CAPSTONE CREATE
 POST http://localhost:3000/capstones.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "name": ,
-  "description": ,
-  "url": ,
-  "screenshot": ,
+  "name": "",
+  "description": "",
+  "url": "",
+  "screenshot": "",
 }
+
 ### CAPSTONE UPDATE ###
 PATCH http://localhost:3000/capstones/1.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### CAPSTONE DESTROY ###
 DELETE http://localhost:3000/capstones/1
+Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
 
@@ -67,23 +76,28 @@ GET http://localhost:3000/education.json
 
 ### EDUCATION CREATE
 POST http://localhost:3000/education.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "start_date": ,
-  "end_date": ,
-  "degree": ,
-  "university_name": ,
-  "details":
+  "start_date": "",
+  "end_date": "",
+  "degree": "",
+  "university_name": "",
+  "details": ""
 }
 ### EDUCATION UPDATE ###
 PATCH http://localhost:3000/education/1.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### EDUCATION DESTROY ###
 DELETE http://localhost:3000/education/1.json
+Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
 
@@ -95,6 +109,7 @@ GET http://localhost:3000/experience.json
 
 ### EXPERIENCE CREATE
 POST http://localhost:3000/experience.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -106,12 +121,16 @@ Content-Type: application/json
 }
 ### EXPERIENCE UPDATE ###
 PATCH http://localhost:3000/experience/1.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### EXPERIENCE DESTROY ###
 DELETE http://localhost:3000/experience/1.json
+Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
 
@@ -119,23 +138,28 @@ DELETE http://localhost:3000/experience/1.json
 GET http://localhost:3000/skills.json
 
 ### SKILLS SHOW ###
-GET http://localhost:3000/skills.json
+GET http://localhost:3000/skills/1.json
 
 ### SKILLS CREATE
 POST http://localhost:3000/skills.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
- "skill_name": 
+ "skill_name": "Ruby on Rails"
 }
 ### SKILLS UPDATE ###
 PATCH http://localhost:3000/skills/1.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
+
 {
 
 }
+
 ### SKILLS DESTROY ###
 DELETE http://localhost:3000/skills/1.json
+Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
 
