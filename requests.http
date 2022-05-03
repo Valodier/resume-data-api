@@ -1,0 +1,162 @@
+### STUDENTS INDEX ###
+GET http://localhost:3000/students.json
+
+### STUDETS SHOW ###
+GET http://localhost:3000/students.json
+
+### STUDENTS CREATE
+POST http://localhost:3000/students.json
+Content-Type: application/json
+
+{
+  "first_name": ,
+  "last_name": ,
+  "email": ,
+  "phone_number": ,
+  "short_bio": ,
+  "linkedin_url": ,
+  "twitter_handle": ,
+  "website_url": ,
+  "online_resume_url": ,
+  "github_url": ,
+  "phone_number": 
+}
+### STUDENTS UPDATE ###
+PATCH http://localhost:3000/students/1.json
+Content-Type: application/json
+{
+
+}
+### STUDENTS DESTROY ###
+DELETE http://localhost:3000/students/1.json
+
+# ----------------------------------------------------------- #
+
+### CAPSTONE INDEX ###
+GET http://localhost:3000/capstones.json
+
+### CAPSTONE SHOW ###
+GET http://localhost:3000/capstones.json
+
+### CAPSTONE CREATE
+POST http://localhost:3000/capstones.json
+Content-Type: application/json
+
+{
+  "name": ,
+  "description": ,
+  "url": ,
+  "screenshot": ,
+}
+### CAPSTONE UPDATE ###
+PATCH http://localhost:3000/capstones/1.json
+Content-Type: application/json
+{
+
+}
+### CAPSTONE DESTROY ###
+DELETE http://localhost:3000/capstones/1
+
+# ----------------------------------------------------------- #
+
+### EDUCATION INDEX ###
+GET http://localhost:3000/education.json
+
+### EDUCATION SHOW ###
+GET http://localhost:3000/education.json
+
+### EDUCATION CREATE
+POST http://localhost:3000/education.json
+Content-Type: application/json
+
+{
+  "start_date": ,
+  "end_date": ,
+  "degree": ,
+  "university_name": ,
+  "details":
+}
+### EDUCATION UPDATE ###
+PATCH http://localhost:3000/education/1.json
+Content-Type: application/json
+{
+
+}
+### EDUCATION DESTROY ###
+DELETE http://localhost:3000/education/1.json
+
+# ----------------------------------------------------------- #
+
+### EXPERIENCE INDEX ###
+GET http://localhost:3000/experience.json
+
+### EXPERIENCE SHOW ###
+GET http://localhost:3000/experience.json
+
+### EXPERIENCE CREATE
+POST http://localhost:3000/experience.json
+Content-Type: application/json
+
+{
+  "start_date": ,
+  "end_date": ,
+  "job_title": ,
+  "company_name": ,
+  "details":
+}
+### EXPERIENCE UPDATE ###
+PATCH http://localhost:3000/experience/1.json
+Content-Type: application/json
+{
+
+}
+### EXPERIENCE DESTROY ###
+DELETE http://localhost:3000/experience/1.json
+
+# ----------------------------------------------------------- #
+
+### SKILLS INDEX ###
+GET http://localhost:3000/skills.json
+
+### SKILLS SHOW ###
+GET http://localhost:3000/skills.json
+
+### SKILLS CREATE
+POST http://localhost:3000/skills.json
+Content-Type: application/json
+
+{
+ "skill_name": 
+}
+### SKILLS UPDATE ###
+PATCH http://localhost:3000/skills/1.json
+Content-Type: application/json
+{
+
+}
+### SKILLS DESTROY ###
+DELETE http://localhost:3000/skills/1.json
+
+# ----------------------------------------------------------- #
+
+### SESSION CREATE (login) ###
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+### USERS CREATE (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
