@@ -1,4 +1,4 @@
-@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3NzcxNzJ9.UboiuorSes9uF-ta043MamHhvWv0hZaGVIIveUGBPks
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3ODEwOTh9.ILiv5nXhr9Wj1rlBOPS0STuSSTgMtsv7tNomekdMyOM
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -8,12 +8,12 @@ GET http://localhost:3000/students/3.json
 
 ### STUDENTS CREATE
 POST http://localhost:3000/students.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
   "first_name": "",
   "last_name": "",
-  "email": "",
   "phone_number": "",
   "short_bio": "",
   "linkedin_url": "",
@@ -25,6 +25,7 @@ Content-Type: application/json
 }
 ### STUDENTS UPDATE ###
 PATCH http://localhost:3000/students/2.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
@@ -32,6 +33,7 @@ Content-Type: application/json
 }
 ### STUDENTS DESTROY ###
 DELETE http://localhost:3000/students/2.json
+Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
 
