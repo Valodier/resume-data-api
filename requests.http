@@ -1,4 +1,5 @@
-@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTE3NzE1NjV9.A2JaPLJoPHrjsdrr0xqv89Vmx7BoSRoEHQJ3DSUHpbU
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3Njg1MTR9.YUtsMGp4IX9YMIIzEdvm9vPpVo0nyQCFoX6nePlVGr0
+
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -105,7 +106,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/experience.json
 
 ### EXPERIENCE SHOW ###
-GET http://localhost:3000/experience.json
+GET http://localhost:3000/experience/1.json
 
 ### EXPERIENCE CREATE
 POST http://localhost:3000/experience.json
