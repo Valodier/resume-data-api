@@ -7,6 +7,7 @@ class StudentsController < ApplicationController
 
   def create
     students = Student.create!(
+      user_id: current_user.id,
       first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
