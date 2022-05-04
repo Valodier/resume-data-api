@@ -1,4 +1,4 @@
-@jwt="eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3Njg1MTR9.YUtsMGp4IX9YMIIzEdvm9vPpVo0nyQCFoX6nePlVGr0"
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3Njg1MTR9.YUtsMGp4IX9YMIIzEdvm9vPpVo0nyQCFoX6nePlVGr0
 
 
 ### STUDENTS INDEX ###
@@ -25,14 +25,14 @@ Content-Type: application/json
   "phone_number": "" 
 }
 ### STUDENTS UPDATE ###
-PATCH http://localhost:3000/students/1.json
+PATCH http://localhost:3000/students/2.json
 Content-Type: application/json
 
 {
   "first_name": "A name"
 }
 ### STUDENTS DESTROY ###
-DELETE http://localhost:3000/students/1.json
+DELETE http://localhost:3000/students/2.json
 
 # ----------------------------------------------------------- #
 
@@ -93,7 +93,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-
+  "degree": ""
 }
 
 ### EDUCATION DESTROY ###
@@ -109,24 +109,24 @@ GET http://localhost:3000/experience.json
 GET http://localhost:3000/experience.json
 
 ### EXPERIENCE CREATE
-POST http://localhost:3000/experiences.json
+POST http://localhost:3000/experience.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "start_date": ,
-  "end_date": ,
-  "job_title": ,
-  "company_name": ,
-  "details":
+  "start_date": "",
+  "end_date": "",
+  "job_title": "",
+  "company_name": "",
+  "details": ""
 }
 ### EXPERIENCE UPDATE ###
-PATCH http://localhost:3000/experiences/1.json
+PATCH http://localhost:3000/experience/1.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-
+  "job_title": "Weee"
 }
 
 ### EXPERIENCE DESTROY ###
@@ -169,7 +169,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test3@test.com",
   "password": "password"
 }
 
@@ -178,8 +178,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "Test",
+  "email": "test3@test.com",
   "password": "password",
   "password_confirmation": "password"
 }

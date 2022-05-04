@@ -52,6 +52,7 @@ class StudentsController < ApplicationController
       render json:{errors: student.error.full_messages}, status: 422
     end
   end
+  
   def destroy
     student = Student.find_by(id: params[:id])
     student.destroy
