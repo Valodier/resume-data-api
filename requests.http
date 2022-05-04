@@ -11,9 +11,6 @@ POST http://localhost:3000/students.json
 Content-Type: application/json
 
 {
-  "first_name": "",
-  "last_name": "",
-  "email": "",
   "phone_number": "",
   "short_bio": "",
   "linkedin_url": "",
