@@ -51,7 +51,7 @@ Content-Type: application/json
   "name": "",
   "description": "",
   "url": "",
-  "screenshot": "",
+  "screenshot": ""
 }
 
 ### CAPSTONE UPDATE ###
@@ -106,7 +106,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/experience.json
 
 ### EXPERIENCE SHOW ###
-GET http://localhost:3000/experience.json
+GET http://localhost:3000/experience/1.json
 
 ### EXPERIENCE CREATE
 POST http://localhost:3000/experience.json
