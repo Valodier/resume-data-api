@@ -1,4 +1,4 @@
-@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3ODEwOTh9.ILiv5nXhr9Wj1rlBOPS0STuSSTgMtsv7tNomekdMyOM
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTE3ODQyOTR9.MTysm7Hch2ShNh_ueolsqPitv18caSqKzjBHP0CeQ5Q
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -39,7 +39,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/capstones.json
 
 ### CAPSTONE SHOW ###
-GET http://localhost:3000/capstones/1.json
+GET http://localhost:3000/capstones/2.json
 
 ### CAPSTONE CREATE
 POST http://localhost:3000/capstones.json
@@ -72,7 +72,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/educations.json
 
 ### EDUCATION SHOW ###
-GET http://localhost:3000/educations.json
+GET http://localhost:3000/educations/2.json
 
 ### EDUCATION CREATE
 POST http://localhost:3000/educations.json
@@ -105,7 +105,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/experience.json
 
 ### EXPERIENCE SHOW ###
-GET http://localhost:3000/experience/1.json
+GET http://localhost:3000/experience/2.json
 
 ### EXPERIENCE CREATE
 POST http://localhost:3000/experience.json
@@ -168,7 +168,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test52@test.com",
   "password": "password"
 }
 
@@ -177,9 +177,9 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "first_name": "Test",
-  "last_name": "Number2",
-  "email": "test2@test.com",
+  "first_name": "Test5",
+  "last_name": "Number5",
+  "email": "test52@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
