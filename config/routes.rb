@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   delete "/educations/:id" => "educations#destroy"
 
   ###EXPERIENCE###
-  get  "/experience" => "experience#index"
+  get  "/experiences" => "experiences#index"
   post "/experience" => "experience#create"
   get  "/experience/:id" => "experience#show"
   patch "/experience/:id" => "experience#update"

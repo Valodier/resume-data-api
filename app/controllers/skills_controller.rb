@@ -9,7 +9,7 @@ class SkillsController < ApplicationController
 
   def create
     skill = Skill.create!(
-      student_id = current_user.id,
+      student_id: current_user.id,
       skill_name: params["skill_name"]
     )
     if skill.save
