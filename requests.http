@@ -1,4 +1,4 @@
-@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTc4Njh9.pKhjim-yifTg9zSnFtrOgQjyBp7OGox8NoF1037Frjw
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTE3NzE1NjV9.A2JaPLJoPHrjsdrr0xqv89Vmx7BoSRoEHQJ3DSUHpbU
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -92,7 +92,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-
+  "degree": ""
 }
 
 ### EDUCATION DESTROY ###
@@ -102,7 +102,7 @@ Authorization: Bearer {{jwt}}
 # ----------------------------------------------------------- #
 
 ### EXPERIENCE INDEX ###
-GET http://localhost:3000/experiences.json
+GET http://localhost:3000/experience.json
 
 ### EXPERIENCE SHOW ###
 GET http://localhost:3000/experience.json
@@ -113,19 +113,19 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "start_date": ,
-  "end_date": ,
-  "job_title": ,
-  "company_name": ,
-  "details":
+  "start_date": "",
+  "end_date": "",
+  "job_title": "",
+  "company_name": "",
+  "details": ""
 }
 ### EXPERIENCE UPDATE ###
-PATCH http://localhost:3000/experiences/1.json
+PATCH http://localhost:3000/experience/1.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-
+  "job_title": "Weee"
 }
 
 ### EXPERIENCE DESTROY ###
@@ -168,7 +168,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test3@test.com",
   "password": "password"
 }
 
@@ -177,8 +177,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Test name",
-  "email": "test@test.com",
+  "name": "Test",
+  "email": "test3@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
