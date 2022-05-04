@@ -12,8 +12,6 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "first_name": "",
-  "last_name": "",
   "phone_number": "",
   "short_bio": "",
   "linkedin_url": "",

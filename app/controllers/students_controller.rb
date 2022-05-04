@@ -1,4 +1,5 @@
 class StudentsController < ApplicationController
+  before_action :authenticate_user, except: [:index, :show]
 
   def index
     students = Student.all.order(:id)
@@ -8,9 +9,9 @@ class StudentsController < ApplicationController
   def create
     students = Student.create!(
       user_id: current_user.id,
-      first_name: params[:first_name],
-      last_name: params[:last_name],
-      email: params[:email],
+      first_name: current_user.first_name,
+      last_name: current_user.last_name,
+      email: current_user.email,
       phone_number: params[:phone_number],
       short_bio: params[:short_bio],
       linkedin_url: params[:linkedin_url],
@@ -18,13 +19,13 @@ class StudentsController < ApplicationController
       website_url: params[:website_url],
       online_resume_url: params[:online_resume_url],
       github_url: params[:github_url],
-      phone_number: params[:phone_number]
+      phone_number: params[:phone_number],
     )
 
     if students.save
       render json: students
     else
-      render json: {errors: student.errors.full_messages}, status: 422
+      render json: { errors: student.errors.full_messages }, status: 422
     end
   end
 
@@ -32,6 +33,7 @@ class StudentsController < ApplicationController
     student = Student.find_by(id: params[:id])
     render json: student
   end
+
   def update
     student = Student.find_by(id: params[:id])
 
@@ -50,14 +52,13 @@ class StudentsController < ApplicationController
     if student.save
       render json: student
     else
-      render json:{errors: student.error.full_messages}, status: 422
+      render json: { errors: student.error.full_messages }, status: 422
     end
   end
-  
+
   def destroy
     student = Student.find_by(id: params[:id])
     student.destroy
-    render json: {message: "Student eliminated."}
+    render json: { message: "Student eliminated." }
   end
-
 end
