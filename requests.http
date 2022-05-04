@@ -1,4 +1,4 @@
-@jwt="eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTQ5Nzl9.OZMNnu4HpJHU6IQyvjrzI3CMDDgX9zpmZ3u9kRoXPhc"
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTc4Njh9.pKhjim-yifTg9zSnFtrOgQjyBp7OGox8NoF1037Frjw
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -24,14 +24,14 @@ Content-Type: application/json
   "phone_number": "" 
 }
 ### STUDENTS UPDATE ###
-PATCH http://localhost:3000/students/1.json
+PATCH http://localhost:3000/students/2.json
 Content-Type: application/json
 
 {
   "first_name": "A name"
 }
 ### STUDENTS DESTROY ###
-DELETE http://localhost:3000/students/1.json
+DELETE http://localhost:3000/students/2.json
 
 # ----------------------------------------------------------- #
 
@@ -102,13 +102,13 @@ Authorization: Bearer {{jwt}}
 # ----------------------------------------------------------- #
 
 ### EXPERIENCE INDEX ###
-GET http://localhost:3000/experience.json
+GET http://localhost:3000/experiences.json
 
 ### EXPERIENCE SHOW ###
 GET http://localhost:3000/experience.json
 
 ### EXPERIENCE CREATE
-POST http://localhost:3000/experiences.json
+POST http://localhost:3000/experience.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
