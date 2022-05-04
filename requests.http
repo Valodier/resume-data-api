@@ -1,4 +1,4 @@
-@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTE3ODQyOTR9.MTysm7Hch2ShNh_ueolsqPitv18caSqKzjBHP0CeQ5Q
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3ODQxMzN9.XzAhwXexEv5xB9mH-XFDuuYwkDO1n_hvVAbgXKVuyRE
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -177,9 +177,15 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
+<<<<<<< HEAD
   "first_name": "Test5",
   "last_name": "Number5",
   "email": "test52@test.com",
+=======
+  "first_name": "Test",
+  "last_name": "Number",
+  "email": "test@test.com",
+>>>>>>> a3eeb3138fa5c80d5388e20606f2dbd72a13bcb2
   "password": "password",
   "password_confirmation": "password"
 }
