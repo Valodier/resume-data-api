@@ -1,4 +1,5 @@
-@jwt="eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE2OTQ5Nzl9.OZMNnu4HpJHU6IQyvjrzI3CMDDgX9zpmZ3u9kRoXPhc"
+@jwt="eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTE3Njg1MTR9.YUtsMGp4IX9YMIIzEdvm9vPpVo0nyQCFoX6nePlVGr0"
+
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
