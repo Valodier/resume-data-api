@@ -22,7 +22,7 @@ Content-Type: application/json
   "phone_number": "" 
 }
 ### STUDENTS UPDATE ###
-PATCH http://localhost:3000/students/2.json
+PATCH http://localhost:3000/students/8.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -30,7 +30,7 @@ Content-Type: application/json
   "first_name": "A name"
 }
 ### STUDENTS DESTROY ###
-DELETE http://localhost:3000/students/2.json
+DELETE http://localhost:3000/students/8.json
 Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
@@ -54,16 +54,16 @@ Content-Type: application/json
 }
 
 ### CAPSTONE UPDATE ###
-PATCH http://localhost:3000/capstones/1.json
+PATCH http://localhost:3000/capstones/2.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-
+  "name": "a name"
 }
 
 ### CAPSTONE DESTROY ###
-DELETE http://localhost:3000/capstones/1
+DELETE http://localhost:3000/capstones/2
 Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
@@ -87,16 +87,16 @@ Content-Type: application/json
   "details": ""
 }
 ### EDUCATION UPDATE ###
-PATCH http://localhost:3000/educations/1.json
+PATCH http://localhost:3000/educations/7.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "degree": ""
+  "degree": "a degree"
 }
 
 ### EDUCATION DESTROY ###
-DELETE http://localhost:3000/educations/1.json
+DELETE http://localhost:3000/educations/7.json
 Authorization: Bearer {{jwt}}
 
 # ----------------------------------------------------------- #
