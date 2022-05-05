@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTE3ODQ0MDZ9.qZ7-WUKcq4aHW3kRTGyank7nirPc6qmTsalTk2i8GdI
+=======
+@jwt=eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NTE4NTkzMzZ9.v4sn1P51R3y_1kVi0GgKcrySsY77LE-linyP1lN0v7k
+>>>>>>> a4219b337629365d1bbe48b2b4beadec9287acde
 
 ### STUDENTS INDEX ###
 GET http://localhost:3000/students.json
@@ -12,14 +16,13 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "phone_number": "",
-  "short_bio": "",
-  "linkedin_url": "",
-  "twitter_handle": "",
-  "website_url": "",
-  "online_resume_url": "",
-  "github_url": "",
-  "phone_number": "" 
+  "phone_number": "number",
+  "short_bio": "bio",
+  "linkedin_url": "linkedin",
+  "twitter_handle": "twitter",
+  "website_url": "url",
+  "online_resume_url": "resume",
+  "github_url": "url"
 }
 ### STUDENTS UPDATE ###
 PATCH http://localhost:3000/students/2.json
@@ -39,7 +42,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/capstones.json
 
 ### CAPSTONE SHOW ###
-GET http://localhost:3000/capstones/1.json
+GET http://localhost:3000/capstones/2.json
 
 ### CAPSTONE CREATE
 POST http://localhost:3000/capstones.json
@@ -72,7 +75,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/educations.json
 
 ### EDUCATION SHOW ###
-GET http://localhost:3000/educations.json
+GET http://localhost:3000/educations/2.json
 
 ### EDUCATION CREATE
 POST http://localhost:3000/educations.json
@@ -105,7 +108,7 @@ Authorization: Bearer {{jwt}}
 GET http://localhost:3000/experience.json
 
 ### EXPERIENCE SHOW ###
-GET http://localhost:3000/experience/1.json
+GET http://localhost:3000/experience/2.json
 
 ### EXPERIENCE CREATE
 POST http://localhost:3000/experience.json
@@ -168,7 +171,11 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
+<<<<<<< HEAD
   "email": "test2@test.com",
+=======
+  "email": "davesmith@test.com",
+>>>>>>> a4219b337629365d1bbe48b2b4beadec9287acde
   "password": "password"
 }
 
@@ -177,11 +184,15 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
+<<<<<<< HEAD
   "first_name": "Test",
   "last_name": "Number2",
   "email": "test2@test.com",
+=======
+  "first_name": "Joe",
+  "last_name": "Smith",
+  "email": "joesmith@test.com",
+>>>>>>> a4219b337629365d1bbe48b2b4beadec9287acde
   "password": "password",
   "password_confirmation": "password"
 }
-
-
