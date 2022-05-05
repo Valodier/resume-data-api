@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-# users = User.create!(name: "Joe Smith", email: "joesmith@test.com", password_digest: "password")
+# users = User.create!(first_name: "Dave", last_name: "Smith", email: "davesmith@test.com", password: "password")
 
-# users = User.create!(name: "Jane Smith", email: "janesmith@test.com", password_digest: "password")
+# users = User.create!(first_name: "Jane", last_name: "Smith", email: "janesmith@test.com", password: "password")
 
 # skills = Skill.create(skill_name: "Ruby on Rails", student_id: 1)
 # skills = Skill.create(skill_name: "Excel", student_id: 2)
