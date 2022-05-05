@@ -49,3 +49,6 @@
 
 # capstones = Capstone.create(name: "Blue", description: "Everything turns the color blue", url: "www.blue.com", screenshot: "wwww.image3.com", student_id: 3)
 # capstones = Capstone.create(name: "No emails", description: "Deletes all of your emails ", url: "www.noemail.com", screenshot: "wwww.image4.com", student_id: 4)
+
+# capstones = Capstone.create(name: "Blue", description: "Everything turns the color blue", url: "www.blue.com", screenshot: "wwww.image3.com", student_id: 3)
+# capstones = Capstone.create(name: "No emails", description: "Deletes all of your emails ", url: "www.noemail.com", screenshot: "wwww.image4.com", student_id: 3)
