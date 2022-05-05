@@ -101,7 +101,7 @@ Authorization: Bearer {{jwt}}
 # ----------------------------------------------------------- #
 
 ### EXPERIENCE INDEX ###
-GET http://localhost:3000/experience.json
+GET http://localhost:3000/experiences.json
 
 ### EXPERIENCE SHOW ###
 GET http://localhost:3000/experience/2.json
